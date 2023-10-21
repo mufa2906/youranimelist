@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# YourAnimeList 
 
-## Getting Started
+YourAnimeList is an application inspired by Myanimelist where the data is obtained from [Jikan](https://jikan.moe/)
 
-First, run the development server:
+## Installation
+
+To get started with Bete, follow these installation steps:
 
 ```bash
+git clone 
+cd YourAnimeList
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [NextJs](https://nextjs.org/)
+- [PhosporIcons](https://phosphoricons.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<!-- **Client:**
 
-## Learn More
+- React
+- Bootstrap
+- Axios
+- React Router DOM
+- Font Awesome
+- SweetAlert2
 
-To learn more about Next.js, take a look at the following resources:
+**Server:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Java Spring Boot
+- MySQL
+- Lombok
+- Spring Boot Starter:
+  - Security
+  - Java JWT
+  - Mail
+  - Validation
+  - Data JPA
+  - Web -->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<!-- ## Documentation
 
-## Deploy on Vercel
+For comprehensive API documentation and usage instructions, please refer to the [POSTMAN Documentation](https://documenter.getpostman.com/view/10358847/2s9YJdVMZi).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Authors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Bete was created and is maintained by the following authors:
+
+- [Agil](https://github.com/esamjr)
+- [Farhan](https://github.com/mufa2906)
+- [Ferdian](https://github.com/Ferdiany19)
+- [Marcel](https://github.com/MRLNT)
+
+Feel free to explore, use, and contribute to Bete. If you have any questions or need assistance, don't hesitate to reach out to the project's maintainers. Happy exploring! -->

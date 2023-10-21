@@ -1,36 +1,24 @@
+import AnimeList from "@/components/AnimeList";
+import Header from "@/components/AnimeList/Header";
 import Link from "next/link";
-import AnimeListCard from "@/components/AnimeListCard";
 
-const Home = async () => {
+const Page = async () => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_BASE_URL}/top/anime?limit=8`
   );
-  const anime = await response.json();
-  console.log(anime.data);
-
+  const topAnime = await response.json();
   return (
     <>
-      <div>
-        <div className="p-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Paling Populer</h1>
-          <Link href="/popular" className="md:text-xl text-md underline hover:text-indigo-500 transition-all">Lihat Semua</Link>
-        </div>
-        <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 px-4">
-          {anime.data.map((data) => {
-            return (
-              <div key={data.mal_id} className="shadow-xl">
-                <AnimeListCard
-                  title={data.title}
-                  images={data.images.webp.image_url}
-                  id={data.mal_id}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <section>
+        <Header
+          title="Paling Populer"
+          linkTitle={"Lihat Terpopuler"}
+          linkHref={"/popular"}
+        />
+        <AnimeList api={topAnime} />
+      </section>
     </>
   );
 };
 
-export default Home;
+export default Page;
