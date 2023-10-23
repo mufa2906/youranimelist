@@ -17,3 +17,34 @@ img {
 img:hover {
   scale: 102%;
 }
+
+.loading {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 12px;
+  background: conic-gradient(from 135deg at top, #ffc639 90deg, #0000 0) 0
+      calc(50% - 8px) / 34px 17px,
+    radial-gradient(
+        farthest-side at bottom left,
+        #0000 calc(100% - 12px),
+        #766df4 calc(100% - 10px) 99%,
+        #0000
+      )
+      top right/50% 50% content-box content-box,
+    radial-gradient(
+        farthest-side at top,
+        #0000 calc(100% - 12px),
+        #766df4 calc(100% - 10px) 99%,
+        #0000
+      )
+      bottom / 100% 50% content-box content-box;
+  background-repeat: no-repeat;
+  animation: s1 1s infinite linear;
+}
+
+@keyframes s1 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
